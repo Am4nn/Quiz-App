@@ -19,7 +19,7 @@ const Quiz = ({ route, navigation }) => {
 
     setIsLoading(true)
     // const url = 'https://opentdb.com/api.php?amount=10&category=18&type=multiple&encode=url3986';
-    const url = `http://localhost:5000/${type}`;
+    const url = `http://10.0.2.2:5000/${type}`;
     const res = await fetch(url);
     const data = await res.json();
     setQuestions(data.results);
